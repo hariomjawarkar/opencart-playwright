@@ -1,0 +1,4 @@
+Registration is completed: Hiram.Sauer17@gmail.com
+Logout is completed!
+Login is completed!
+Product added to cart!

@@ -1,0 +1,4 @@
+Registration is completed: Joel_Windler@hotmail.com
+Logout is completed!
+Login is completed!
+Product added to cart!

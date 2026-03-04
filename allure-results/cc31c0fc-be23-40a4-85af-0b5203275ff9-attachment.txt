@@ -1,0 +1,4 @@
+Registration is completed: Tommie5@yahoo.com
+Logout is completed!
+Login is completed!
+Product added to cart!

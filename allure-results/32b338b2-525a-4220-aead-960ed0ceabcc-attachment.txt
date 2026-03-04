@@ -1,0 +1,4 @@
+Registration is completed: Frank_Abbott@gmail.com
+Logout is completed!
+Login is completed!
+Product added to cart!

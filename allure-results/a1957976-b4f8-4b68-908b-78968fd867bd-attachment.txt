@@ -1,0 +1,8 @@
+Exception occured while clicking 'Register':Error: locator.click: Error: strict mode violation: getByText('Register') resolved to 3 elements:
+    1) <a href="https://tutorialsninja.com/demo/index.php?route=account/register">Register</a> aka locator('#top-links').getByText('Register')
+    2) <strong>Register Account</strong> aka getByText('Register Account')
+    ...
+
+Call log:
+  - waiting for getByText('Register')
+

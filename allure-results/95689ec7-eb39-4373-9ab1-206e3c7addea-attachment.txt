@@ -1,0 +1,4 @@
+Registration is completed: Henry_Jakubowski@yahoo.com
+Logout is completed!
+Login is completed!
+Product added to cart!

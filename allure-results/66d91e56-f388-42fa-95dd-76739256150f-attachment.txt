@@ -1,0 +1,4 @@
+Registration is completed: Annette_Wisoky@yahoo.com
+Logout is completed!
+Login is completed!
+Product added to cart!

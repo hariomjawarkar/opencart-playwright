@@ -1,0 +1,4 @@
+Registration is completed: Spencer.Crist@hotmail.com
+Logout is completed!
+Login is completed!
+Product added to cart!

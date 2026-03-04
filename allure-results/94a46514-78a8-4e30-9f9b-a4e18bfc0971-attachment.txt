@@ -1,0 +1,3 @@
+Registration is completed: Sean.Homenick@gmail.com
+Logout is completed!
+Login is completed!

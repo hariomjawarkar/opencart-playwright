@@ -1,0 +1,4 @@
+Registration is completed: Skye.Cormier23@gmail.com
+Logout is completed!
+Login is completed!
+Product added to cart!

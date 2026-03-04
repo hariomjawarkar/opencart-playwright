@@ -1,0 +1,4 @@
+Registration is completed: Marcella82@gmail.com
+Logout is completed!
+Login is completed!
+Product added to cart!

@@ -1,0 +1,4 @@
+Registration is completed: Ian.Osinski-Schamberger30@gmail.com
+Logout is completed!
+Login is completed!
+Product added to cart!

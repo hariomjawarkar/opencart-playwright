@@ -1,0 +1,4 @@
+Registration is completed: Lenore44@hotmail.com
+Logout is completed!
+Login is completed!
+Product added to cart!

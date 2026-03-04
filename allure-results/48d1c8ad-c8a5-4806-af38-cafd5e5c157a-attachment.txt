@@ -1,0 +1,8 @@
+Exception occured while clicking 'My Account':Error: locator.click: Error: strict mode violation: getByText('My Account') resolved to 3 elements:
+    1) <span class="hidden-xs hidden-sm hidden-md">My Account</span> aka getByRole('link', { name: ' My Account' })
+    2) <h5>My Account</h5> aka getByRole('heading', { name: 'My Account' })
+    3) <a href="https://tutorialsninja.com/demo/index.php?route=account/account">My Account</a> aka getByRole('link', { name: 'My Account', exact: true })
+
+Call log:
+  - waiting for getByText('My Account')
+

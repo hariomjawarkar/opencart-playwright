@@ -1,0 +1,4 @@
+Registration is completed: Levi_Goldner@gmail.com
+Logout is completed!
+Login is completed!
+Product added to cart!

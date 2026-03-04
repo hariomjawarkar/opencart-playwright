@@ -1,0 +1,4 @@
+Exception occured while clicking 'My Account':Error: locator.click: Unexpected token "" while parsing css selector "span:has-text("My Account". Did you mean to CSS.escape it?
+Call log:
+  - waiting for span:has-text("My Account
+

@@ -1,0 +1,4 @@
+Registration is completed: Yadira.Schumm@gmail.com
+Logout is completed!
+Login is completed!
+Product added to cart!
