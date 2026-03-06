@@ -1,0 +1,5 @@
+Registration is completed: Georgia.Lind19@gmail.com
+Logout is completed!
+Login is completed!
+Product added to cart!
+Shopping cart verification completed!

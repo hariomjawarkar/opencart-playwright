@@ -46,15 +46,19 @@ export class HomePage {
 
     async clickRegister(): Promise<void> {
         // Navigate directly to the register page to avoid flaky dropdown interactions
-        const base = new URL(this.page.url()).origin;
+        const url = new URL(this.page.url());
+        const base = `${url.origin}${url.pathname.replace(/\/$/, '')}`;
         await this.page.goto(`${base}/index.php?route=account/register`);
         await this.page.waitForLoadState('networkidle');
     }
 
     async clickLogin(): Promise<void> {
         // Navigate directly to the login page to avoid flaky dropdown interactions
-        const base = new URL(this.page.url()).origin;
+        const url = new URL(this.page.url());
+        const base = `${url.origin}${url.pathname.replace(/\/$/, '')}`;
         await this.page.goto(`${base}/index.php?route=account/login`);
+        await this.page.waitForURL('**/index.php?route=account/login**');
+        await this.page.waitForLoadState('networkidle');
     }
 
     async enterProductName(pName: string): Promise<void> {

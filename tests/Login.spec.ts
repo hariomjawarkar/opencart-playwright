@@ -20,8 +20,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test.afterEach(async ({ page }) => {
-  await page.waitForTimeout(2000);
-  await page.close();
+  await page.waitForTimeout(1000);
 });
 
 test("Valid login should land on My Account page", async ({ page }) => {

@@ -16,10 +16,12 @@ export class LoginPage {
     }
 
     async setEmail(email: string): Promise<void> {
+        await this.txtEmail.waitFor({ state: 'visible' });
         await this.txtEmail.fill(email);
     }
 
     async setPassword(password: string): Promise<void> {
+        await this.txtPassword.waitFor({ state: 'visible' });
         await this.txtPassword.fill(password);
     }
 
@@ -31,12 +33,15 @@ export class LoginPage {
         await this.setEmail(email);
         await this.setPassword(password);
         await this.clickLogin();
+        await this.page.waitForLoadState('networkidle');
     }
 
     async getLoginErrorMessage(): Promise<string> {
-        if (await this.alertDanger.isVisible()) {
+        try {
+            await this.alertDanger.waitFor({ state: 'visible', timeout: 5000 });
             return (await this.alertDanger.textContent()) ?? '';
+        } catch (e) {
+            return '';
         }
-        return '';
     }
 }

@@ -17,25 +17,23 @@ test.beforeEach(async ({ page }) => {
 });
 
 test.afterEach(async ({ page }) => {
-  await page.waitForTimeout(3000);
-  await page.close();
+  await page.waitForTimeout(1000);
 });
 
 test("User registration test", async ({ page }) => {
   await homePage.clickMyAccount();
   await homePage.clickRegister();
 
-  //Fill in registration with random data
-  await registrationPage.setFirstName(RandomDataUtil.getFirstName());
-  await registrationPage.setLastName(RandomDataUtil.getlastName());
-  await registrationPage.setEmail(RandomDataUtil.getEmail());
-  await registrationPage.setTelephone(RandomDataUtil.getPhoneNumber());
-
-  const password = RandomDataUtil.getPassword();
-  await registrationPage.setPrivacyPolicy();
-  await registrationPage.clickContinue();
+  const password = RandomDataUtil.getRandomPassword(10);
+  await registrationPage.completeRegistration({
+    firstName: RandomDataUtil.getFirstName(),
+    lastName: RandomDataUtil.getlastName(),
+    email: RandomDataUtil.getEmail(),
+    telephone: RandomDataUtil.getPhoneNumber(),
+    password: password
+  });
 
   //validate to confirmation message
-  //const confirmationMsg=await registrationPage.getConfirmationMsg();
-  //expect(confirmationMsg).toContain('Your Account Has Been Created!');
+  const confirmationMsg = await registrationPage.getConfirmationMsg();
+  expect(confirmationMsg).toContain('Your Account Has Been Created!');
 });

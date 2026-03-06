@@ -15,13 +15,13 @@ test('execute end-to-end test flow @end-to-end', async ({ page }) => {
     const config = new TestConfig();
     await page.goto(config.appUrl);
 
-    const registeredEmail: string = await performRegistration(page);
-    console.log('Registration is completed:', registeredEmail);
+    const { email, password } = await performRegistration(page);
+    console.log('Registration is completed:', email);
 
     await performLogout(page);
     console.log('Logout is completed!');
 
-    await performLogin(page, registeredEmail, config.password);
+    await performLogin(page, email, password);
     console.log('Login is completed!');
 
     await addProductsToCart(page);
@@ -31,7 +31,7 @@ test('execute end-to-end test flow @end-to-end', async ({ page }) => {
     console.log('Shopping cart verification completed!');
 });
 
-async function performRegistration(page: Page): Promise<string> {
+async function performRegistration(page: Page): Promise<{ email: string; password: string }> {
     const home = new HomePage(page);
     await home.clickMyAccount();
     // navigate directly to registration page to avoid header/dropdown flakiness
@@ -50,7 +50,7 @@ async function performRegistration(page: Page): Promise<string> {
         password,
     });
 
-    return email;
+    return { email, password };
 }
 async function performLogout(page: Page): Promise<void> {
     // try to click Logout if visible

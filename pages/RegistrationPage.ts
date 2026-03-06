@@ -30,7 +30,7 @@ export class RegistrationPage {
 
     // 🔹 Wait until registration page is fully loaded
     private async waitForRegistrationPage(): Promise<void> {
-        await this.page.waitForURL('**route=account/register**');
+        await this.page.waitForURL('**/index.php?route=account/register**');
         await this.txtFirstName.waitFor({ state: 'visible' });
     }
 

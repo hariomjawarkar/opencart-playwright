@@ -1,0 +1,5 @@
+Registration is completed: Linda.Stark89@yahoo.com
+Logout is completed!
+Login is completed!
+Product added to cart!
+Shopping cart verification completed!
