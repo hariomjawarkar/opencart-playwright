@@ -53,6 +53,3 @@ npx playwright show-report
 ## 🎥 Evidence
 Check the `/assets` folder for execution videos and screenshots of the automation runs.
 
----
-Created with ❤️ by Antigravity Automation Assistant
-#****
